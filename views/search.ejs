@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Bollywood ,Movie ,Hollywood DualAudio , dualaudio,Hindi Movie,Hindi Dubbed,480p Movie">
+    <meta name="description" content="FilmyTemple.xyz,filmyTemple.org,filmytemple.live, 300Mb Movies, 2021 Movies,
+     Dual Audio Hindi Movies Download South Hindi Dubbed Movies, Hollywood Movies, Web Series Download Movie in 480p Download">
+    
+     <title>FilmyTemple</title>
+    <!-- add icon link -->
+    <link rel = "icon" href = 
+    "https://1.bp.blogspot.com/-1D1eByMDGsU/YLcCe8qx96I/AAAAAAAAAPQ/oBtoPavVgsUoeKWtRchN9O0lZUJR2wf7wCLcBGAsYHQ/s2048/FT_logo-01-01.png" 
+            type = "image/x-icon">
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:500|Abel:normal|Alef:700|Aclonica:normal|Roboto:normal&amp;subset=latin" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+     <!--header-->
+     <link rel="stylesheet" href="/css/header.css">
+     <!--header-->
+   
+    <!--nav-->
+    <link rel="stylesheet" href="/css/nav.css">
+    <!--nav-->
+
+<!--movie-->
+<link rel="stylesheet" href="/css/movie.css">
+<!--movie-->
+
+
+
+<!--pagination-->
+<link rel="stylesheet" href="/css/pagination.css">
+<!--pagination-->
+
+
+<!--side-->
+<link rel="stylesheet" href="/css/side.css">
+<!--side-->
+
+<!--footer-->
+<link rel="stylesheet" href="/css/footer.css">
+<!--footer-->
+
+
+
+</head>
+<body>
+     <!--header-->
+  <div class="header">
+    
+    <div class="logo">
+     <Router>
+      <a href="/" class="bollyhub">
+          <img src="https://1.bp.blogspot.com/-H3eRwQDmgUA/YLnN1juky0I/AAAAAAAAAQk/0_nhnslf4RIR1l-f8V0ICll1OJICjXhbACLcBGAsYHQ/s2811/ftlogon-01.png" />
+      </a>
+     </Router>
+    </div>
+</div>
+  <!--header-->
+    
+  <nav>
+    <div class="menu">
+        <ul class="menu_link">
+
+           
+        <li class="nav-link"  >        
+               <a href="/"  class="menu_li <%= active ==='home' ? 'active':'' %>"">
+                   Home
+              </a>     
+           </li>
+          
+              
+           <li  class="nav-link" >
+                <a href="/category/bollywood" class="menu_li  <%= active ==='bollywood' ? 'active':'' %>">
+                    Bollywood
+                </a>
+            </li>
+
+            <li class="nav-link" >
+                <a href="/category/hollywood" class="menu_li  <%= active ==='hollywood' ? 'active':'' %>">
+                   Hollywood
+                </a>           
+            </li>
+
+            <li class="nav-link" >
+                <a href="/category/dualaudio" class="menu_li  <%= active ==='dualaudio' ? 'active':'' %>">
+                 Dual Audio
+                </a>
+            </li>
+           
+            <li class="nav-link" >
+                <a href="/category/pakistani" class="menu_li  <%= active ==='pakistani' ? 'active':'' %> ">
+                  Pakistani
+                </a>
+            </li>
+
+           
+            <li class="nav-link" >
+                <a href="/category/animation" class="menu_li  <%= active ==='animation' ? 'active':'' %>">
+                  Animation
+                </a>
+            </li>
+
+           <li class="nav-link" >
+                <a href="/category/punjabi" class="menu_li  <%= active ==='punjabi' ? 'active':'' %>">
+                  Punjabi
+                </a>
+           </li>
+
+
+          
+            
+           <li class="nav-link" >
+                <a href="/category/movie300" class="menu_li  <%= active ==='movie300' ? 'active':'' %>">
+                 300MB Movie
+                </a>
+           </li>
+
+           
+
+           <li class="nav-link" >
+                <a href="/category/south" class="menu_li  <%= active ==='south' ? 'active':'' %>">
+                 South Indian
+                </a>
+           </li>
+
+
+           <li class="nav-link" >
+                <a href="/category/telugu" class="menu_li  <%= active ==='telugu' ? 'active':'' %>"> 
+                  Telugu
+                </a>
+           </li>
+
+           <li class="nav-link" >
+                <a href="#" class="menu_li">
+                  Genres<i class="fa fa-caret-down"></i>
+                </a>
+                
+                <ul class="drop_menu">
+                    <li >
+                      <a href="/category/horror"
+                      >
+                       Horror Movie
+                      </a><br/>
+                    </li>
+
+                    <li >
+                      <a href="/category/action" >
+                       Action Movie
+                      </a>
+                    </li> 
+
+                    <li >
+                      <a href="/category/sci-fi" >
+                       Sci-fi Movie
+                      </a>
+                    </li> 
+                </ul>
+
+            </li>
+          
+
+
+
+           <li class="nav-link" >
+                <a href="/category/webseries" class="menu_li">
+                 Web series
+                </a>
+           </li>
+
+        </ul>    
+    </div>
+</nav>
+    
+
+    <!--home page-->
+
+    <div class="main">
+        <div class="wrapper">
+            <div class="content">
+               
+               <div class="post">
+                   <h4>Home</h4>
+               </div>
+               <% if(data.length>0){ %>
+               <div class="archive">
+                   <!--movie list-->
+                   <ul>
+                   <% data.forEach(function(el,index){ %>
+
+                     <li >
+                         <div class="cover">
+                          <a href="/download/<%=el.url%>/">
+                             <img src="<%= el.image %>"
+                               alt="<%= el.image %>" />
+                          </a> 
+                           <div class="text_box">
+                           <a class="text" href="/download/<%=el.url%>/">
+                            <%= el.name %>
+                           </a> 
+                           </div>
+                         
+                  
+                         </div>      
+                     </li> 
+   
+                     <%  }) %>
+                       
+                                           
+              </ul>
+                    <!--movie list-->
+               </div>  
+               
+
+                   <div class="pagination_container">
+                       <!--Pagination-->
+                     
+                      <input id="source" type="hidden" value="<%=limit %>" />
+                      <input id="index" type="hidden" value="<%=index %>" />
+                      <input id="search" type="hidden" value="<%=search %>" />
+                      <div class="pagination">
+                        
+                        <div class="pagination-container">
+                            <a  href="/search/?find=<%=search%>&page=<%=index-1%>" id="CaretLeftFill">
+                            <i class="fa fa-caret-left" ></i>
+                           </a>
+                      
+                            <div id="pagination">
+                                
+                            </div>
+                    
+                            <a  href="/search/?find=<%=search%>&page=<%=index+1%>" id="CaretRightFill" >
+                              <i class="fa fa-caret-right"></i>
+                            </a>
+
+                          </div>
+
+
+
+
+
+
+
+                      </div>
+
+                      
+
+
+
+
+                       <!--Pagination-->
+                    </div> 
+                    <%}else{ %>
+                        <div class="archive">
+                          <ul>
+                             <li class="no_data">
+                              Data Not Found!
+                             </li>
+                          </ul>
+                         </div> 
+        
+                    <% } %>
+
+            </div>
+           <div class="sidebar">
+               <!--sidebar-->
+               <div class="side">
+                <div class="search">
+                    <input type="text" name="txt" 
+                    onchange="myFunction(this.value)" />
+                  <a id="myAnchor" href="/" >Search</a>
+                </div>
+                <div class="recent">
+                    <h3 class="rec_text">Recent Post</h3>
+                    <ul class="recent_post">
+                       <% recent.forEach(function(el,ind){ %>
+
+
+                            <li>
+                           
+                            <a href="/download/<%=el.url%>/">
+                                <img src="<%= el.image %>"></img>
+                            </Link>
+                            <a href="/download/<%=el.url%>/">
+                                <%= el.name %>
+                            </a>
+                        
+                    </li>
+                    
+                    <% }) %>
+                       
+                    </ul>
+                </div>
+             </div>
+
+               <!--sidebar-->
+           </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+<div class="footer">
+    <div class="foot_link">
+        <span><a href="/">Home</a></span>
+        <span>|</span>
+        <span><a href="/about">About</a></span></span>
+        <span>|</span>
+        <span><a href="/contact">Contact</a></span></span>
+    </div>
+ </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script>
+      const setLimit = Math.ceil(parseInt($("#source").val())/15)
+     // console.log(setLimit)
+      const page = setLimit
+       const pagedot = $('#pagination')
+       const currentButton = parseInt($("#index").val())
+      
+       const search = $('#search').val()
+      
+       if(currentButton === 1){
+           $('#CaretLeftFill').addClass("disabled")
+        }
+
+        if(currentButton === page){
+           $('#CaretRightFill').addClass("disabled")
+        }
+      // console.log()
+       const numberOfPages = []
+       var arrOfCurrButtons = []
+       const element = []
+         for (let i = 1; i <=page; i++) {
+           numberOfPages.push(i)
+           }
+
+    
+   
+    let tempNumberOfPages = [...arrOfCurrButtons]
+    let dotsInitial = '...'
+    let dotsLeft = '...'
+    let dotsRight = '...'
+    if (numberOfPages.length < 6) {
+      tempNumberOfPages = numberOfPages
+    }
+    else if (currentButton >= 1 && currentButton <= 2) {
+      tempNumberOfPages = [1, 2, 3, dotsInitial, numberOfPages.length]
+    }
+
+    else if (currentButton === 3) {
+      const sliced = numberOfPages.slice(0, 4)
+      tempNumberOfPages = [...sliced, dotsInitial, numberOfPages.length]
+    }
+
+    else if (currentButton > 3 && currentButton < numberOfPages.length - 2) {               // from 5 to 8 -> (10 - 2)
+      const sliced1 = numberOfPages.slice(currentButton - 2, currentButton)                 // sliced1 (5-2, 5) -> [4,5] 
+      const sliced2 = numberOfPages.slice(currentButton, currentButton + 1)                 // sliced1 (5, 5+1) -> [6]
+      tempNumberOfPages = ([1, dotsLeft, ...sliced1, ...sliced2, dotsRight, numberOfPages.length]) // [1, '...', 4, 5, 6, '...', 10]
+    }
+    
+    else if (currentButton > numberOfPages.length - 3) {                 // > 7
+      const sliced = numberOfPages.slice(numberOfPages.length - 4)       // slice(10-4) 
+      tempNumberOfPages = ([1, dotsLeft, ...sliced])                        
+    }
+  
+
+   //dotinit
+
+     arrOfCurrButtons = tempNumberOfPages
+
+     arrOfCurrButtons.forEach(function(el,ind){
+        let voteable = el === currentButton ? "active" : ""
+        let dotinit = el === "..." ?"init":""
+       
+        
+        pagedot.append($("<a href='/search/?find="+search+"&page="+el+"' class='"+voteable+dotinit+"' >"+el+"</a>")[0])
+     })
+   
+     
+     function myFunction(val) {
+        document.getElementById("myAnchor").href = "/search/?find="+val;
+    }
+
+ </script>
+</body>
+</html>

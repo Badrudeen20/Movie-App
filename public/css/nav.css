@@ -1,0 +1,137 @@
+.menu{
+    position: relative;
+    background: #2C3E50;
+    box-shadow: 0 8px 20px 0 rgba(170, 171, 172, 0.37);
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    margin-bottom: 10px;
+    z-index: 1000;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    }
+    
+    
+    
+    .menu .menu_link{ 
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    }
+    .menu_link .nav-link{
+    position: relative;
+    }
+    .menu .menu_link .nav-link .menu_li{
+    text-align: center;
+    font-weight: 600;
+    padding: 8px 14px;
+    }
+    
+    
+    .menu .menu_link .nav-link:hover .menu_li{
+    background: #FBFCFC;
+    color:#000;
+    }
+    .fa-caret-down{
+    margin-top: 2px;
+    }
+    
+    .menu .menu_link .nav-link:hover > .menu_li  .fa-caret-down{
+    transform: rotate(180deg);
+    transition: 100ms;
+    }
+    
+    .menu .menu_link .nav-link .menu_li{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 0px;
+     border-radius: 5px;
+     color: #fff;
+    }
+    
+    
+    
+    .private{
+     display: none;
+    }
+    .fa-caret-down{
+    margin-left: 4px;
+    }
+    
+    .drop_menu{
+    position:absolute;
+    text-decoration: none;
+    list-style:none;  
+    z-index: 1000;
+    display: none;
+    }
+    .drop_menu li{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    width: 220px;
+    
+    }
+    
+    .drop_menu li a{
+    
+     width: 100%;
+     padding-left: 10px;
+     padding-top:10px;
+     padding-bottom: 10px;
+     text-decoration: none;
+     font-weight: 600;
+      background-color: #282B2E;
+      color: #fff;
+    }
+    
+    .drop_menu li a:hover{
+    background-color: #F8F9F9;
+    color: #000;
+    }
+    
+    
+    
+    .drop_menu li a.active{
+    background-color: #FBFCFC;
+    color: #000;
+    }
+    
+    .menu .menu_link .nav-link .menu_li.action,
+    .menu .menu_link .nav-link .menu_li.horror,
+    .menu .menu_link .nav-link .menu_li.sci-fi{
+    background:#FBFCFC; 
+    color: #000;
+    }
+    
+    .menu .menu_link .nav-link:hover .drop_menu{
+     display:block;
+    }
+    
+    .menu .menu_link .nav-link .menu_li.active{
+    background:#F7F9F9;
+    box-sizing: border-box;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    color: #000;
+    }
+    
+    
+    .notify{
+     position: absolute;
+     background-color:#EC7063;
+     width: 16px;
+     height: 16px;
+     color: #fff;
+     text-align: center;
+     font-size: 11px;
+     border-radius: 100%;
+      right: 0;
+    }

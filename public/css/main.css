@@ -1,0 +1,134 @@
+.main{
+    position: relative;
+    width: 100%;
+   
+}
+.main .download{
+   position: relative;
+   width: 100%;
+}
+
+.poster_cover{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.poster h2{
+     padding-bottom: 8px;
+     color: #2C3E50;
+    text-align: center;
+}
+
+.poster{
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.poster img{
+     position: relative;
+     width:100%;
+}
+
+.imdb{
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+.download_btn{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 25px;
+     margin-bottom: 40px;
+}
+.download_btn a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    width: 160px;
+    margin-bottom: 10px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border:2px solid #fff;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.imdb strong{
+     color: #2C3E50;
+     font-family: 'Roboto';
+     font-size: 16px;
+}
+
+.imdb .data{
+     color:#5D6D7E;
+     font-size: 15px;
+     font-family: 'Alef';
+     margin-left: 4px;
+}
+.movie_poster{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+      padding:0px 60px 10px 60px;
+}
+.download_sidebar{
+     padding-top: 30px;
+     padding-left:10px;
+     padding-right:10px;
+}
+
+
+
+ 
+
+ @media screen  and (min-width:680px){
+ 
+   .poster_cover{
+       padding-left: 80px;
+       padding-right: 80px;
+   }
+   .poster h2{
+       padding-left: 30px;
+       padding-right: 30px;
+   }
+}
+
+
+@media screen  and (min-width:870px){
+   .download{
+        display: flex;
+   }
+   .poster_cover{
+       padding-left: 50px;
+       padding-right: 50px;
+   }
+   .poster h2{
+       padding-left: 30px;
+       padding-right: 30px;
+   }
+}
+
+@media screen  and (min-width:1200px){
+  
+   .poster_cover{
+       padding-left: 100px;
+       padding-right: 100px;
+   }
+   .poster h2{
+       padding-left: 50px;
+       padding-right: 50px;
+   }
+}
+
+
+@media screen  and (min-width:870px){
+   
+     .movie_poster{
+         padding:0px 100px 10px 100px;
+     }
+  }

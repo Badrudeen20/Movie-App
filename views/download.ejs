@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Bollywood ,Movie ,Hollywood DualAudio , dualaudio,Hindi Movie,Hindi Dubbed,480p Movie">
+    <meta name="description" content="FilmyTemple.xyz,filmyTemple.org,filmytemple.live, 300Mb Movies, 2021 Movies,
+     Dual Audio Hindi Movies Download South Hindi Dubbed Movies, Hollywood Movies, Web Series Download Movie in 480p Download">
+    <title> 
+      <% movie.forEach(function(data){ %>
+         <%=data.name%>
+      <%})%>    
+   </title>
+    <!-- add icon link -->
+    <link rel = "icon" href = 
+    "https://1.bp.blogspot.com/-1D1eByMDGsU/YLcCe8qx96I/AAAAAAAAAPQ/oBtoPavVgsUoeKWtRchN9O0lZUJR2wf7wCLcBGAsYHQ/s2048/FT_logo-01-01.png" 
+            type = "image/x-icon">
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:500|Abel:normal|Alef:700|Aclonica:normal|Roboto:normal&amp;subset=latin" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--header-->
+    <link rel="stylesheet" href="/css/header.css">
+    <!--header-->
+
+
+      <!--nav-->
+      <link rel="stylesheet" href="/css/nav.css">
+      <!--nav-->
+    
+      <style>
+        .main{
+position: relative;
+width: 100%;
+overflow-x: hidden;
+}
+.main .download{
+position: relative;
+width: 100%;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.poster_cover{
+position: relative;
+
+}
+.poster h2{
+ padding-bottom: 8px;
+ color: #2C3E50;
+text-align: center;
+}
+
+.poster{
+position: relative;
+padding-top: 29px;
+width: 100%;
+}
+
+.poster img{
+ position: relative;
+ width:100%;
+}
+
+.imdb{
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.download_btn{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 25px;
+ margin-bottom: 40px;
+}
+.download_btn a{
+list-style: none;
+text-decoration: none;
+font-weight: bold;
+padding: 10px;
+width: 160px;
+outline: none;
+color: #fff;
+cursor: pointer;
+text-align: center;
+border:2px solid #fff;
+border-radius: 5px;
+background-color: #333;
+margin-bottom: 20px;
+}
+
+.imdb strong{
+ color: #2C3E50;
+ font-family: 'Roboto';
+ font-size: 16px;
+}
+
+.imdb .data{
+ color:#5D6D7E;
+ font-size: 15px;
+ font-family: 'Alef';
+ margin-left: 4px;
+}
+.movie_poster{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  padding:0px 60px 10px 60px;
+}
+
+.download_sidebar{
+ padding-top: 30px;
+}
+
+
+/*  comment */
+            .comment{
+              position: relative;
+              width:100%;
+            }
+           .form-group{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .form-group label{
+      font-size: 20px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .form-group input,.form-group select,.form-group textarea{
+      padding: 7px;
+      border-radius: 4px;
+      border: 1px solid #333;
+      outline: none;
+      margin-top: 5px;
+ }
+ .user_name{
+     width: 55%;
+ }
+  .submit_btn{
+            margin-top: 10px;
+            padding: 6px;
+            background-color:  #333;
+            color:  #f4f6f7;
+            border:none;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-bottom: 20px;
+  }
+ 
+
+        </style>
+        
+       
+
+
+<!--response-->
+<link rel="stylesheet" href="/css/response.css">
+<!--response-->
+
+<!--side-->
+<style>
+   .side{
+    position: relative;
+    width: 100%;
+     display: flex;
+     flex-direction: column;
+    
+}
+
+
+.side .search{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8px;
+    padding-bottom: 20px;
+   
+}
+.side input[type="text"]{
+    width: 200px;
+    height: 34px;
+    border:none;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 1px solid #333;
+    padding-left: 10px;
+}
+.side #myAnchor{
+    height: 34px;
+    padding-left:10px;
+    padding-right:10px;
+    text-decoration: none;
+    background-color:  #333;
+    color:  #f4f6f7;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.side .recent ul{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+.side .recent ul li{
+    padding: 5px 0;
+}
+.side .recent ul  li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Alef';
+    color: #000;
+}
+.side .recent .rec_text{
+    color: #515a5a;
+    font-size: 17px;
+}
+.recent_post li{
+    display: flex;
+}
+.recent_post li a{
+    font-size: 15px;
+}
+.recent_post li img{
+width: 50px;
+margin-right: 10px;
+}
+.hide{
+    display:none;
+}
+</style>
+<!--side-->
+<!--@media screen-->
+<style>
+
+@media screen  and (min-width:680px){
+
+.poster_cover{
+   padding-left: 80px;
+   padding-right: 80px;
+}
+
+
+.poster h2{
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.download_sidebar{
+  margin-left: 80px;
+  margin-right: 80px;
+ }
+}
+
+
+
+@media screen  and (min-width:870px){
+.download{
+    display: flex;
+}
+
+.poster_cover{
+   padding-left: 50px;
+   padding-right: 50px;
+}
+.poster h2{
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.download_sidebar{
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+
+ .movie_poster{
+    padding:0px 100px 10px 100px;
+  }
+}
+
+@media screen  and (min-width:1200px){
+
+.poster_cover{
+   padding-left: 100px;
+   padding-right: 100px;
+}
+.poster h2{
+   padding-left: 50px;
+   padding-right: 50px;
+}
+.side input[type="text"]{
+    width: 240px;
+   
+}
+
+}
+
+
+
+
+
+</style>
+<!--footer-->
+<link rel="stylesheet" href="/css/footer.css">
+<!--footer-->
+
+
+</head>
+
+<body>
+
+     <!--header-->
+  <div class="header">
+    
+    <div class="logo">
+     <Router>
+      <a href="/" class="bollyhub">
+          <img src="https://1.bp.blogspot.com/-H3eRwQDmgUA/YLnN1juky0I/AAAAAAAAAQk/0_nhnslf4RIR1l-f8V0ICll1OJICjXhbACLcBGAsYHQ/s2811/ftlogon-01.png" />
+      </a>
+     </Router>
+    </div>
+</div>
+  <!--header-->
+
+    <nav>
+        <div class="menu">
+            <ul class="menu_link">
+    
+               
+            <li class="nav-link"  >        
+                   <a href="/"  class="menu_li <%= active ==='home' ? 'active':'' %>"">
+                       Home
+                  </a>     
+               </li>
+              
+                  
+               <li  class="nav-link" >
+                    <a href="/category/bollywood" class="menu_li  <%= active ==='bollywood' ? 'active':'' %>">
+                        Bollywood
+                    </a>
+                </li>
+    
+                <li class="nav-link" >
+                    <a href="/category/hollywood" class="menu_li  <%= active ==='hollywood' ? 'active':'' %>">
+                       Hollywood
+                    </a>           
+                </li>
+    
+                <li class="nav-link" >
+                    <a href="/category/dualaudio" class="menu_li  <%= active ==='dualaudio' ? 'active':'' %>">
+                     Dual Audio
+                    </a>
+                </li>
+               
+                <li class="nav-link" >
+                    <a href="/category/pakistani" class="menu_li  <%= active ==='pakistani' ? 'active':'' %> ">
+                      Pakistani
+                    </a>
+                </li>
+    
+               
+                <li class="nav-link" >
+                    <a href="/category/animation" class="menu_li  <%= active ==='animation' ? 'active':'' %>">
+                      Animation
+                    </a>
+                </li>
+    
+               <li class="nav-link" >
+                    <a href="/category/punjabi" class="menu_li  <%= active ==='punjabi' ? 'active':'' %>">
+                      Punjabi
+                    </a>
+               </li>
+    
+    
+              
+                
+               <li class="nav-link" >
+                    <a href="/category/movie300" class="menu_li  <%= active ==='movie300' ? 'active':'' %>">
+                     300MB Movie
+                    </a>
+               </li>
+    
+               
+    
+               <li class="nav-link" >
+                    <a href="/category/south" class="menu_li  <%= active ==='south' ? 'active':'' %>">
+                     South Indian
+                    </a>
+               </li>
+    
+    
+               <li class="nav-link" >
+                    <a href="/category/telugu" class="menu_li  <%= active ==='telugu' ? 'active':'' %>"> 
+                      Telugu
+                    </a>
+               </li>
+    
+               <li class="nav-link" >
+                    <a href="#" class="menu_li">
+                      Genres<i class="fa fa-caret-down"></i>
+                    </a>
+                    
+                    <ul class="drop_menu">
+                        <li >
+                          <a href="/category/horror"
+                          >
+                           Horror Movie
+                          </a><br/>
+                        </li>
+    
+                        <li >
+                          <a href="/category/action" >
+                           Action Movie
+                          </a>
+                        </li> 
+    
+                        <li >
+                          <a href="/category/sci-fi" >
+                           Sci-fi Movie
+                          </a>
+                        </li> 
+                    </ul>
+    
+                </li>
+              
+    
+    
+    
+               <li class="nav-link" >
+                    <a href="/category/webseries" class="menu_li">
+                     Web series
+                    </a>
+               </li>
+
+            </ul>    
+        </div>
+    </nav>
+   
+
+ 
+
+
+    <div class="main" >
+        <% movie.forEach(function(data){ %>
+        <div class="download">
+
+        <div class="poster_cover">
+
+ <div class="poster">
+    <h2><%=data.name%></h2>
+    <div class="movie_poster">
+       <img src="<%=data.image %>" />
+    </div>
+    <br/> 
+    <div class="imdb">
+       <strong>Rating:<span class="data"><%=data.rating%></span></strong>
+       <br/>
+       <strong>Genre:<span class="data"><%=data.genres%></span></strong>
+    </div>
+    <div class="imdb">
+       <strong>Director:<span class="data"><%=data.director%></span></strong>
+       <br/>
+       <strong>Artist:<span class="data"><%=data.cast%></span></strong>
+       <br/>
+       <% if(data.link4!="null"){ %>
+        <strong>480p Size:<span class="data"> <%=data.link4mb%></span></strong>
+       <% } %>
+       <br/>
+       <% if(data.link7!="null"){ %>
+        <strong>720p Size:<span class="data">  <%=data.link7mb%></span></strong>
+       <% } %>
+     
+    </div>
+    <div class="imdb">
+       <strong>Language:<span class="data"><%=data.language%></span></strong>
+       <br/>
+       <strong>Quality:<span class="data"><%=data.quality%></span></strong>
+       <br/>
+       <strong>Duration:<span class="data"><%=data.duration%></span></strong>
+    </div>
+    <div class="imdb">
+       <strong>Story:<span class="data"><%=data.story%></span></strong>   
+    </div>
+    <img src="<%=data.screenshot %>" />
+ </div>
+
+ <div class="download_btn">
+     <% if(data.watchonline != "null"){ %>
+        <a href="<%=data.watchonline%>" class="torrent_link">Watch online</a>
+     <% } %>
+    <br/>
+    <% if(data.link4 != "null"){ %>
+        <a href="<%=data.link4%>" class="torrent_link">Download 480p</a>
+        <br/>
+     <% } %>
+   
+    <% if(data.link7 != "null"){ %>
+        <a href="<%=data.link7%>" class="torrent_link">Download 720p</a>
+     <% } %>
+ </div> 
+   
+      <!--comment-->
+ <div class="comment">
+      <form action="/comment" method="POST">
+        <div class="form-group">
+           <span>Leave a comment</span>
+           <textarea type="text" rows="4" cols="50" name="content"  required></textarea>  
+        </div>
+  
+        <div class="form-group user_name">
+           <span>Name</span>
+           <input type="text"  name="name" required/>
+        </div>
+            <input type="hidden" name="postId" value="<%=data.url%>" required/>
+              <input type="hidden" name="movieLink" id="url"  value="" required/>
+       <button class="submit_btn" type="submit">Submit</button>
+     </form>
+      
+   <% var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']; %> 
+     <% chat.forEach(function(com,no){ %>       
+         <%if(!com.responseTo){%>  
+            <% function reply(el){ %>
+          <div class="Reponse">
+             <div class="request">
+                  <div class="dp">F</div>
+                   <div class="request_detail">
+                   <p class="request_name"><%=el.name%></p>
+                   <p class="content"><%=el.content%></p>
+                   <div class="reply"><p><%=new Date(com.createdAt).getDate()%> <%=month[new Date(com.createdAt).getMonth()]%></p>
+                   <span onclick="toggle('<%=com._id%>')">Reply</span></div>
+                  </div>
+             </div>    
+                                    
+             
+                              <% function replyTo(id){%>     
+                                 <% chat.forEach(function(repTo){ %>
+                                 <%if(JSON.stringify(repTo.responseTo)===JSON.stringify(id)){ %>
+                                    <div class="replyTo">
+                                    <div class="Reponse">
+                                         <div class="request">
+                                              <div class="dp">F</div>
+                                               <div class="request_detail">
+                                               <p class="request_name"><%=repTo.name%></p>
+                                               <p class="content"><%=repTo.content%></p>
+                                               <div class="reply"><p><%=new Date(repTo.createdAt).getDate()%> <%=month[new Date(repTo.createdAt).getMonth()]%></p>
+                                               <span onclick="toggle('<%=repTo._id%>')">Reply</span></div>
+                                              </div>
+                                         </div> 
+                                         <%replyTo(repTo._id)%>  
+     
+                                         <form action="/comment" method="POST"  class="flex" id="ind<%=repTo._id%>">
+                                             <div class="form-group">
+                                                <span>Leave a comment</span>
+                                                <textarea type="text" rows="4" cols="80" name="content"  required></textarea>  
+                                             </div>
+                                       
+                                             <div class="form-group user_name">
+                                                <span>Name</span>
+                                                <input type="text" name="name" required/>
+                                             </div>
+                                               <input type="hidden" name="responseTo" value="<%=repTo._id%>" required/>
+                                               <input type="hidden" name="postId"  value="<%=data.url%>" required/>
+
+                                               <button class="submit_btn" type="submit">Submit</button>
+                                          </form>
+                                         </div> 
+                                     </div>
+     
+                                <% } %>    
+                            <%})%>
+                    <% } replyTo(com._id)%>
+     
+                                           
+     
+     
+                                             <form action="/comment" method="POST" class="flex" id="ind<%=com._id%>">
+        
+                                                 <div class="form-group">
+                                                    <span>Leave a comment</span>
+                                                    <textarea type="text" rows="4" cols="80" name="content" required></textarea>  
+                                                 </div>
+                                           
+                                                 <div class="form-group user_name">
+                                                    <span>Name</span>
+                                                    <input type="text"  name="name" required/>
+                                                 </div>
+     
+                                                 <input type="hidden" name="responseTo" value="<%=el._id%>" required/>
+                                                 <input type="hidden" name="postId" value="<%=data.url%>" required/>
+                                                 
+                                            <button class="submit_btn" type="submit">Submit</button>
+                                              </form>
+                                          </div>
+                                          <%}
+                                           reply(com)
+                                           %>
+                                      <%} %>
+     
+                                 <% }) %>
+
+</div>
+      <!--comment-->
+
+</div>
+
+           <div class="download_sidebar">
+              <!--sidebar-->
+              <div class="side">
+                <div class="search">
+
+                    <input type="text" name="txt" 
+                         onchange="myFunction(this.value)" />
+                       <a id="myAnchor" href="/" >Search</a>
+
+                </div>
+                <div class="recent">
+                    <h3 class="rec_text">Recent Post</h3>
+                    <ul class="recent_post">
+                       <% recent.forEach(function(el,ind){ %>
+                        <li>
+                            <a href="/download/<%=el.url%>/">
+                                <img src="<%= el.image %>"></img>
+                            </Link>
+                            <a href="/download/<%=el.url%>/">
+                                <%= el.name %>
+                            </a>
+                       </li>
+                    
+                    <% }) %>
+                       
+                    </ul>
+                </div>
+             </div>
+               
+            <!--sidebar-->
+           </div>
+      </div>
+      <%  }) %>
+  </div>
+  
+
+  <!--footer-->
+
+<div class="footer">
+    <div class="foot_link">
+        <span><a href="/">Home</a></span>
+        <span>|</span>
+        <span><a href="/about">About</a></span></span>
+        <span>|</span>
+        <span><a href="/contact">Contact</a></span></span>
+    </div>
+ </div>
+  <script>
+     function myFunction(val) {
+        document.getElementById("myAnchor").href = "/search/?find="+val;
+    }
+
+    function toggle(index) {
+           var element = document.getElementById(`ind${index}`);
+           element.classList.toggle("block");
+         }
+    document.getElementById('url').value =window.location.href
+  </script>
+</body>
+</html>

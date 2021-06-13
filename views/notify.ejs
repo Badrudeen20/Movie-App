@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmyTemple</title>
+    <!-- add icon link -->
+    <link rel = "icon" href = 
+    "https://1.bp.blogspot.com/-1D1eByMDGsU/YLcCe8qx96I/AAAAAAAAAPQ/oBtoPavVgsUoeKWtRchN9O0lZUJR2wf7wCLcBGAsYHQ/s2048/FT_logo-01-01.png" 
+            type = "image/x-icon">
+            
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+         <!--header-->
+         <link rel="stylesheet" href="/css/header.css">
+         <!--header-->
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ .comments{
+     min-height: 100vh;
+ }
+        .person{
+            margin: 10px;
+        }
+        .request{
+            display: flex;
+            
+        }
+.dp{
+     background-color:  #f08169 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53.33px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 26px;
+    margin-right: 20px;
+    height: 50px;
+    color: antiquewhite;
+ }
+.Not_Fount{
+     padding: 20px;
+     color:  #717d7e;
+     font-size: 17px;
+     font-family: 'Courier New', Courier, monospace;
+}
+.person{
+     background-color:#B2BABB;
+     margin-bottom: 10px;
+}
+.del_comment{
+   position: absolute;
+   right: 10%;
+   border: none;
+   font-size: 25px;
+   background-color: none;
+   outline: none;
+   outline: none;
+   background-color: #B2BABB;
+}
+.del_comment i{
+     cursor: pointer;
+}
+.request a{
+    font-size: 10px;
+ }
+ .request_name{
+     font-size: 16px;
+     font-weight: bold;
+ }
+ .request_detail .content{
+     font-size: 12px;
+ }
+ </style>
+
+
+     <!--nav-->
+     <link rel="stylesheet" href="/css/nav.css">
+     <!--nav-->
+
+    </style>
+</head>
+<body>
+
+    <!--header-->
+  <div class="header">
+    
+    <div class="logo">
+     <Router>
+      <a href="/" class="bollyhub">
+          <img src="https://1.bp.blogspot.com/-H3eRwQDmgUA/YLnN1juky0I/AAAAAAAAAQk/0_nhnslf4RIR1l-f8V0ICll1OJICjXhbACLcBGAsYHQ/s2811/ftlogon-01.png" />
+      </a>
+     </Router>
+    </div>
+</div>
+  <!--header-->
+    
+    <nav>
+        <div class="menu">
+            <ul class="menu_link">
+    
+               
+            <li class="nav-link"  >        
+                   <a href="/"  class="menu_li <%= active ==='home' ? 'active':'' %>"">
+                       Home
+                  </a>     
+               </li>
+              
+                  
+               <li  class="nav-link" >
+                    <a href="/category/bollywood" class="menu_li  <%= active ==='bollywood' ? 'active':'' %>">
+                        Bollywood
+                    </a>
+                </li>
+    
+                <li class="nav-link" >
+                    <a href="/category/hollywood" class="menu_li  <%= active ==='hollywood' ? 'active':'' %>">
+                       Hollywood
+                    </a>           
+                </li>
+    
+                <li class="nav-link" >
+                    <a href="/category/dualaudio" class="menu_li  <%= active ==='dualaudio' ? 'active':'' %>">
+                     Dual Audio
+                    </a>
+                </li>
+               
+                <li class="nav-link" >
+                    <a href="/category/pakistani" class="menu_li  <%= active ==='pakistani' ? 'active':'' %> ">
+                      Pakistani
+                    </a>
+                </li>
+    
+               
+                <li class="nav-link" >
+                    <a href="/category/animation" class="menu_li  <%= active ==='animation' ? 'active':'' %>">
+                      Animation
+                    </a>
+                </li>
+    
+               <li class="nav-link" >
+                    <a href="/category/punjabi" class="menu_li  <%= active ==='punjabi' ? 'active':'' %>">
+                      Punjabi
+                    </a>
+               </li>
+    
+    
+              
+                
+               <li class="nav-link" >
+                    <a href="/category/movie300" class="menu_li  <%= active ==='movie300' ? 'active':'' %>">
+                     300MB Movie
+                    </a>
+               </li>
+    
+               
+    
+               <li class="nav-link" >
+                    <a href="/category/south" class="menu_li  <%= active ==='south' ? 'active':'' %>">
+                     South Indian
+                    </a>
+               </li>
+    
+    
+               <li class="nav-link" >
+                    <a href="/category/telugu" class="menu_li  <%= active ==='telugu' ? 'active':'' %>"> 
+                      Telugu
+                    </a>
+               </li>
+    
+               <li class="nav-link" >
+                    <a href="#" class="menu_li">Genres
+                     <i class="fa fa-caret-down"></i>
+                    </a>
+                    
+                    <ul class="drop_menu">
+                        <li >
+                          <a href="/category/horror">
+                             
+                           Horror Movie
+                          </a><br/>
+                        </li>
+    
+                        <li >
+                          <a href="/category/action" >
+                           Action Movie
+                          </a>
+                        </li> 
+    
+                        <li >
+                          <a href="/category/sci-fi" >
+                           Sci-fi Movie
+                          </a>
+                        </li> 
+                    </ul>
+    
+                </li>
+    
+               <li class="nav-link" >
+                    <a href="/category/webseries" class="menu_li">
+                     Web series
+                    </a>
+               </li>
+    
+               <li class="nav-link" >
+                <a href="/notify" class="menu_li">
+                 Notify
+                </a>
+              </li>
+    
+            </ul>    
+        </div>
+    </nav>
+        
+     
+    <div class="comments">
+         <% user.forEach(function(data){ %>
+            <div class=" person">
+            
+                <div class="request">
+                     <div class="dp">U</div>
+                   <div class="request_detail">
+                      <p class="request_name"><%=data.name%></p>
+                      <p class="content"><%=data.content%></p>
+                      <a href="<%=data.movieLink%>"><%=data.movieLink%></a>
+                     </div>
+                      <form action="/notify" method="POST">
+                          <input type="hidden" name="id" value="<%=data._id%>" />
+                        <button button="submit" class="del_comment"><i class="fa fa-trash-o"></i></button>
+                      </form>
+                      
+                </div>
+                 
+            </div>
+       
+
+       <%  }) %>
+           
+
+        
+    </div>
+
+</body>
+</html>

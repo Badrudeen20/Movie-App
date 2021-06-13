@@ -1,0 +1,27 @@
+.footer{
+    border-top:1px solid #333;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+.foot_link{
+    text-align:left;
+}
+.foot_link span{
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #000;
+}
+.foot_link span a{
+   font-size: 12px;
+   letter-spacing: 2px;
+   font-weight: bold;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.foot_link span a,.foot_link p a{
+    text-decoration: none;
+    color: #000;
+}
+.foot_link p a{
+    font-size: 12px;
+}

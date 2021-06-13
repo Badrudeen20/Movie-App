@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmyTemple</title>
+    <!-- add icon link -->
+    <link rel = "icon" href = 
+    "https://1.bp.blogspot.com/-1D1eByMDGsU/YLcCe8qx96I/AAAAAAAAAPQ/oBtoPavVgsUoeKWtRchN9O0lZUJR2wf7wCLcBGAsYHQ/s2048/FT_logo-01-01.png" 
+            type = "image/x-icon">
+            
+</head>
+<body>
+    <form action="/login" method="POST">
+        <p>Email</p>
+        <input type="email" placeholder="email" name="email" />
+        <p>password</p>
+        <input type="password" placeholder="password" name="password" />
+        <br/>
+        <button type="submit">Submit</button>
+        <br/>
+        <% if(messages.error){ %>
+            <span><%= messages.error %></span>
+           <% } %>
+    </form>
+    
+</body>
+</html>
